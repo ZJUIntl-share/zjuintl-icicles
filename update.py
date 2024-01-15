@@ -13,7 +13,7 @@ README_MD = ['README.md', 'readme.md', 'index.md']
 
 TXT_EXTS = ['md', 'txt']
 TXT_URL_PREFIX = 'https://github.com/ZJUI-share/zjui-icicles/blob/main/'
-BIN_URL_PREFIX = 'https://github.com/ZJUI-share/zjui-icicles/zju-icicles/raw/main/'
+BIN_URL_PREFIX = 'https://github.com/ZJUI-share/zjui-icicles/raw/main/'
 
 
 def list_files(course: str):
