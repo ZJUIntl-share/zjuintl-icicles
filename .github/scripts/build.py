@@ -40,6 +40,9 @@ def list_files(course: str):
     return filelist_texts, readme_path
 
 def move_files(course: str):
+    # if not in github action, return
+    if not os.environ.get('GITHUB_ACTIONS'):
+        return
     for root, dirs, files in os.walk(course):
         files.sort()
         for f in files:
