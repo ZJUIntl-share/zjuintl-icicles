@@ -6,14 +6,15 @@ From https://github.com/QSCTech/zju-icicles
 """
 
 import os
+import shutil
 from urllib.parse import quote
 
-EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site']
+EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site', '.github']
 README_MD = ['README.md', 'readme.md', 'index.md']
 
 TXT_EXTS = ['md', 'txt']
-TXT_URL_PREFIX = 'https://github.com/ZJUI-share/zjui-icicles/blob/main/'
-BIN_URL_PREFIX = 'https://github.com/ZJUI-share/zjui-icicles/raw/main/'
+TXT_URL_PREFIX = '/'
+BIN_URL_PREFIX = '/'
 
 
 def list_files(course: str):
@@ -36,6 +37,17 @@ def list_files(course: str):
             elif root == course and readme_path == '':
                 readme_path = '{}/{}'.format(root, f)
     return filelist_texts, readme_path
+
+def move_files(course: str):
+    for root, dirs, files in os.walk(course):
+        files.sort()
+        for f in files:
+            if not f in README_MD:
+                if not os.path.isdir(os.path.join('site', root)):
+                    os.makedirs(os.path.join('site', root))
+                # shutil.copyfile(os.path.join(root, f), os.path.join('site', root, f))
+                # move instead of copy
+                shutil.move(os.path.join(root, f), os.path.join('site', root, f))
 
 
 def generate_md(course: str, filelist_texts: str, readme_path: str):
@@ -63,3 +75,8 @@ if __name__ == '__main__':
 
     with open('docs/index.md', 'w') as file:
         file.writelines(mainreadme_lines)
+
+    os.system('mkdocs build')
+
+    for course in courses:
+        move_files(course)
