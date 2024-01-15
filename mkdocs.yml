@@ -13,6 +13,7 @@ markdown_extensions:
 theme:
   name: material
   language: zh
+  logo: assets/校徽_白.png
   palette:
 
     # Palette toggle for light mode

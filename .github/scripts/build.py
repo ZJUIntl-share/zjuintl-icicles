@@ -9,7 +9,7 @@ import os
 import shutil
 from urllib.parse import quote
 
-EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site', '.github']
+EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site', '.github', 'assets']
 README_MD = ['README.md', 'readme.md', 'index.md']
 
 TXT_EXTS = ['md', 'txt']
@@ -79,6 +79,8 @@ if __name__ == '__main__':
 
     with open('docs/index.md', 'w') as file:
         file.writelines(mainreadme_lines)
+
+    shutil.copytree('assets', 'docs/assets', dirs_exist_ok=True)
 
     os.system('mkdocs build')
 
