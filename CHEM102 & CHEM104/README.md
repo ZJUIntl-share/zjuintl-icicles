@@ -6,4 +6,4 @@
 
 然后另一个视频系列就是我们 CHEM102 的讨论课上看的 Crash Course Chemistry ，这是一个（英文）化学速成系列，[这是B站上的链接](https://www.bilibili.com/video/BV19a4y1L7wT)（有中字）
 
-教材是这一本：Chemistry by Steven S. Zumdahl, Susan A. Zumdahl, Donald J. DeCoste，文件比较大，就不放了
+教材是这一本：Chemistry by Steven S. Zumdahl, Susan A. Zumdahl, Donald J. DeCoste（文件太大就不放了），也推荐中文教材《普通化学原理》
