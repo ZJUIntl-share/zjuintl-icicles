@@ -1,4 +1,44 @@
 site_name: 浙江大学国际联合学院课程攻略共享计划
-theme: readthedocs
+site_author: ZJUIntl-share
+repo_name: zjuintl-icicles
 repo_url: https://github.com/ZJUIntl-share/zjuintl-icicles
 edit_uri: edit/main/
+
+copyright: Copyright &copy; 2023-present <a href="https://github.com/ZJUIntl-share" target="_blank" rel="noopener noreferrer">
+  ZJUIntl-share</a>.
+
+markdown_extensions:
+  - pymdownx.tilde
+
+theme:
+  name: material
+  language: zh
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ZJUIntl-share/zjuintl-icicles
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:me@geniucker.top
