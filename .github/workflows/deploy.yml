@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.repository == 'ZJUIntl-share/zjuintl-icicles'
 
     steps:
       - name: Checkout Repo
