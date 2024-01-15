@@ -28,12 +28,13 @@ def list_files(course: str):
         subindent = ' ' * 4 * (level + 1)
         for f in files:
             if f not in README_MD:
+                # open in new tab
                 if f.split('.')[-1] in TXT_EXTS:
-                    filelist_texts += '{}- [{}]({})\n'.format(subindent,
-                                                              f, TXT_URL_PREFIX + quote('{}/{}'.format(root, f)))
+                    filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
+                                                                                         TXT_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
                 else:
-                    filelist_texts += '{}- [{}]({})\n'.format(subindent,
-                                                              f, BIN_URL_PREFIX + quote('{}/{}'.format(root, f)))
+                    filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
+                                                                                         BIN_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
             elif root == course and readme_path == '':
                 readme_path = '{}/{}'.format(root, f)
     return filelist_texts, readme_path
