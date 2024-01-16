@@ -41,5 +41,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ZJUIntl-share/zjuintl-icicles
+    - icon: material/forum
+      link: https://www.cc98.org/topic/5802442
     - icon: fontawesome/solid/paper-plane
       link: mailto:me@geniucker.top
