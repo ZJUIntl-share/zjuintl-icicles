@@ -18,24 +18,33 @@ BIN_URL_PREFIX = '/'
 
 
 def list_files(course: str):
+    has_file = True # if has file in this course
     filelist_texts = '## 文件列表 {.file_list}\n\n'
     filelist_texts += '??? 点击展开文件列表\n'
     readme_path = ''
+    # if no files
+    if not any([f for root, dirs, files in os.walk(course) for f in files if f not in README_MD]):
+        has_file = False
+        level = 1
+        indent = ' ' * 4 * level
+        filelist_texts += '{}- {}\n'.format(indent, '别看了，还没有文件')
     for root, dirs, files in os.walk(course):
         files.sort()
         level = root.replace(course, '').count(os.sep) + 1
         indent = ' ' * 4 * level
-        filelist_texts += '{}- {}\n'.format(indent, os.path.basename(root))
+        if has_file:
+            filelist_texts += '{}- {}\n'.format(indent, os.path.basename(root))
         subindent = ' ' * 4 * (level + 1)
         for f in files:
             if f not in README_MD:
-                # open in new tab
-                if f.split('.')[-1] in TXT_EXTS:
-                    filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
-                                                                                         TXT_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
-                else:
-                    filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
-                                                                                         BIN_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
+                if has_file:
+                    # open in new tab
+                    if f.split('.')[-1] in TXT_EXTS:
+                        filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
+                                                                                            TXT_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
+                    else:
+                        filelist_texts += '{}- <a href="{}" target="_blank">{}</a>\n'.format(subindent,
+                                                                                            BIN_URL_PREFIX + quote('{}/{}'.format(root, f)), f)
             elif root == course and readme_path == '':
                 readme_path = '{}/{}'.format(root, f)
     return filelist_texts, readme_path
