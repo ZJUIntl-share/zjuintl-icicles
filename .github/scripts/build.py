@@ -19,10 +19,11 @@ BIN_URL_PREFIX = '/'
 
 def list_files(course: str):
     filelist_texts = '## 文件列表 {.file_list}\n\n'
+    filelist_texts += '??? 点击展开文件列表\n'
     readme_path = ''
     for root, dirs, files in os.walk(course):
         files.sort()
-        level = root.replace(course, '').count(os.sep)
+        level = root.replace(course, '').count(os.sep) + 1
         indent = ' ' * 4 * level
         filelist_texts += '{}- {}\n'.format(indent, os.path.basename(root))
         subindent = ' ' * 4 * (level + 1)

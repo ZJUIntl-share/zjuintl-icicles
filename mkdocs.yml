@@ -10,6 +10,9 @@ copyright: Copyright &copy; 2023-present <a href="https://github.com/ZJUIntl-sha
 markdown_extensions:
   - pymdownx.tilde
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_css:
   - assets/extra.css

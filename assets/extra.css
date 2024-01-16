@@ -1,15 +1,15 @@
-.file_list + ul,
-.file_list + ol {
+.file_list + details ul,
+.file_list + details ol {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-.file_list + ul li,
-.file_list + ol li,
-.file_list + ul ul,
-.file_list + ol ol,
-.file_list + ul ol,
-.file_list + ol ul {
+.file_list + details ul li,
+.file_list + details ol li,
+.file_list + details ul ul,
+.file_list + details ol ol,
+.file_list + details ul ol,
+.file_list + details ol ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
