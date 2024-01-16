@@ -18,7 +18,7 @@ BIN_URL_PREFIX = '/'
 
 
 def list_files(course: str):
-    filelist_texts = '## 文件列表\n\n'
+    filelist_texts = '## 文件列表 {.file_list}\n\n'
     readme_path = ''
     for root, dirs, files in os.walk(course):
         files.sort()

@@ -1,0 +1,15 @@
+.file_list + ul,
+.file_list + ol {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.file_list + ul li,
+.file_list + ol li,
+.file_list + ul ul,
+.file_list + ol ol,
+.file_list + ul ol,
+.file_list + ol ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
