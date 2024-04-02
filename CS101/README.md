@@ -36,4 +36,4 @@ W.I.P. 这个等大一的小伙子们来些，我已经忘了
 ```
 
 ## 一些笔记
-- [Geniucker's Note](https://github.com/Geniucker/Obsidian-Geniucker/tree/main/Archive/CS%20101)
+- [Geniucker's Note](https://github.com/geniucker-dev/notes/tree/main/Archive/CS%20101)
