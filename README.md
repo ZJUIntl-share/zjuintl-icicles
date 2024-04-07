@@ -3,8 +3,6 @@
 > 以下内容大部分来在于 [浙江大学课程攻略共享计划](https://github.com/QSCTech/zju-icicles/)，在此表示感谢。  
 > 由于海宁校区的课程与其他校区非常不同，所以建立了这个项目。  
 
-> 感谢 [@wouiSB](https://github.com/wouiSB) 的逆天域名  
-
 ## 前言
 
 来到一所大学，从第一次接触许多课，直到一门一门完成，这个过程中我们时常收集起许多资料和情报。
@@ -62,7 +60,7 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！
 │   │   └── 普林斯顿微积分读本.pdf # 资源文件
 ```
 
-那么 MATH221 & MATH231 课程首页的内容可以看 [这里](https://zjuintl-icicles.is-sb.com/MATH221%20%26%20MATH231/)
+那么 MATH221 & MATH231 课程首页的内容可以看 [这里](https://icicles.zjuintl-share.top/MATH221%20%26%20MATH231/)
 
 
 ### 操作方法
@@ -105,6 +103,13 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！
 - QQ 群大多为年级和专业所分隔，无法长期共同地保有；况且群文件也缺乏组织。
 - GitHub 项目可以使用目录进行文件组织，并且每个目录均可以在显示文件列表的同时显示一个 README，十分适合本项目的需求。
 - GitHub 带有便捷的 Issue 和 Pull Request 协作功能，并且可以方便地对贡献的质量进行监督和调整。
+
+# 感谢
+
+- 大善人 Cloudflare 提供的 Pages 服务
+- [@geniucker-dev](https://github.com/geniucker-dev) 提供的域名
+- 各位贡献者  
+  ![GitHub Contributors Image](https://contrib.rocks/image?repo=ZJUIntl-share/zjuintl-icicles)
 
 ## 许可
 
