@@ -53,14 +53,18 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！
 ```
 .
 ├── README.md                  # 首页
-├── MATH221 & MATH231          # 课程文件夹
+├── MATH213                    # 课程文件夹
 │   ├── README.md              # 课程首页
-│   ├── Textbook
-│   │   ├── 微积分之屠龙宝刀+.pdf  # 资源文件
-│   │   └── 普林斯顿微积分读本.pdf # 资源文件
+│   ├── samples
+│   │   ├── *.pdf              # 资源文件
+│   │   ├── ...
+|   |   └── ...
+|   ├── Final Cheatsheet.pdf   # 资源文件
+|   ├── ...
+|   └── ...
 ```
 
-那么 MATH221 & MATH231 课程首页的内容可以看 [这里](https://icicles.zjuintl-share.top/MATH221%20%26%20MATH231/)
+那么 MATH213 课程首页的内容可以看 [这里](https://icicles.zjuintl-share.top/MATH213/)
 
 
 ### 操作方法
