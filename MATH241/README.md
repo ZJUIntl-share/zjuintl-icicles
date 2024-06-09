@@ -28,3 +28,5 @@
 很多老白ppt上的内容都和这本书有关，特征函数、勒贝格积分、子序列收敛一类的都在里面
 
 老白最开始上课的时候应该提到过，但这本书对于小白极不友好，建议对241有一定知识储备之后再看。
+
+B站大学链接：<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=247232169&bvid=BV1dv411b75m&cid=313544902&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
