@@ -29,4 +29,4 @@
 
 老白最开始上课的时候应该提到过，但这本书对于小白极不友好，建议对241有一定知识储备之后再看。
 
-B站大学链接：<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=247232169&bvid=BV1dv411b75m&cid=313544902&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+B站大学链接：【【华章数学译丛】数学分析原理(Rudin)【中英双字】】 https://www.bilibili.com/video/BV1dv411b75m/?share_source=copy_web&vd_source=7e427ebe9ff0821f481dd1169f42a59b
