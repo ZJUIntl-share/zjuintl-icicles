@@ -1,8 +1,10 @@
-# ECE 313 (Spring 2024) Prof. 陈飘
+# ECE313
+
+## (Spring 2024) Prof. 陈飘
 
 > Contributors: [hmnkapa](https://github.com/hmnkapa)
 
-## 课程内容
+### 课程内容
 
 Peoplesoft 上关于ECE 313的描述：
 
@@ -10,9 +12,7 @@ Peoplesoft 上关于ECE 313的描述：
 
 实际的课程内容涵盖了概率分布、随机变量、概率不等式、多元随机变量、中心极限定理、似然与估计和假设检验等
 
-
-
-## cp教授版的课程难度
+### cp教授版的课程难度
 
 ECE 313这门课本身的知识广而不深
 
@@ -26,21 +26,10 @@ cp教授23年加入zjui，所以24SP的ECE 313应该是第一次由他来上课
 
 24SP的final难度较大，不过老师总体上给分还是很nice的，狠狠地curve
 
-
-
-## 教材
+### 教材
 
 Syllabus上写的教材是A first course in probability by Sheldon Ross
 
 真正的教材疑似是Statistical Inference by George Casella
 
 作业小测和考试的题很多出自Statistical Inference的课后习题
-
-
-
-
-
-
-
-
-
