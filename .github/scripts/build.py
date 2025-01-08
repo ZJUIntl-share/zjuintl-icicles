@@ -9,7 +9,7 @@ import os
 import shutil
 from urllib.parse import quote
 
-EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site', '.github', 'assets']
+EXCLUDE_DIRS = ['.git', 'docs', '.vscode', '.circleci', 'site', '.github', 'assets', 'node_modules', '.wrangler']
 README_MD = ['README.md', 'readme.md', 'index.md']
 
 TXT_EXTS = ['md', 'txt']
