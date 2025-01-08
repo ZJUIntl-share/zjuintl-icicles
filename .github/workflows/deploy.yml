@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  deployments: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,9 +31,9 @@ jobs:
         run: python3 .github/scripts/build.py
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: zjuintl-icicles
-          directory: site
+          command: pages deploy site --project-name=zjuintl-icicles
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
