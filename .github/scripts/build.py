@@ -79,6 +79,7 @@ if __name__ == '__main__':
 
     courses = list(filter(lambda x: os.path.isdir(x) and (
         x not in EXCLUDE_DIRS), os.listdir('.')))  # list courses
+    courses.sort()
 
     for course in courses:
         filelist_texts, readme_path = list_files(course)
