@@ -90,9 +90,26 @@ if __name__ == '__main__':
     with open('docs/index.md', 'w') as file:
         file.writelines(mainreadme_lines)
 
-    shutil.copytree('assets', 'docs/assets', dirs_exist_ok=True)
+    # generate nav in mkdocs.yml
+    with open('mkdocs.yml', 'r') as file:
+        mkdocs_lines = file.readlines()
+    mkdocs_new = mkdocs_lines.copy() + [
+        'nav:\n',
+        '  - 首页: index.md\n'
+    ]
+    for course in courses:
+        mkdocs_new.append("  - {}: {}\n".format(course, "{}.md".format(course)))
+    with open('mkdocs.yml', 'w') as file:
+        file.writelines(mkdocs_new)
+    
+    try:
+        shutil.copytree('assets', 'docs/assets', dirs_exist_ok=True)
 
-    os.system('mkdocs build')
+        os.system('python3 -m mkdocs build')
+    finally:
+        # restore mkdocs.yml
+        with open('mkdocs.yml', 'w') as file:
+            file.writelines(mkdocs_lines)
 
     for course in courses:
         move_files(course)
