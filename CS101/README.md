@@ -37,3 +37,7 @@ W.I.P. 这个等大一的小伙子们来些，我已经忘了
 
 ## 一些笔记
 - [Geniucker's Note](https://github.com/geniucker-dev/notes/tree/main/Archive/CS%20101)
+- [Becky's Note](https://wwna.lanzouu.com/iu06D2ygfigh)
+
+  笔记中的部分代码截图来自24级ME的一位大佬（doge），同样打补丁，笔记内容仅供参考，如有错误，恳请斧正。(邮箱：yile.24@intl.zju.edu.cn)
+  
