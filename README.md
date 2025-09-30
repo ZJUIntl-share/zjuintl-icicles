@@ -119,7 +119,7 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！
 
 由贡献者编写部分的许可如下：
 
-[CC-BY-NC-SA：署名-非商业性使用-相同方式共享](https://github.com/ZJUIntl-share/zjuintl-icicles://LICENSE)
+[CC-BY-NC-SA：署名-非商业性使用-相同方式共享](https://github.com/ZJUIntl-share/zjuintl-icicles/blob/main/LICENSE)
 
 > 资料仅供参考，请自己判断其适用性。
 
