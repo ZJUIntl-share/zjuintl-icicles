@@ -1,4 +1,5 @@
 site_name: 浙大国际校区课程攻略共享计划
+site_description: “浙大国际校区课程攻略共享计划”是由浙大国际校区学生自发维护的课程资料共享网站。网站以课程为索引，涵盖 UIUC 工程与理科课程，如化学（CHEM102/104）、计算机科学（CS101、CS225）、电气与计算机工程（ECE110、ECE120、ECE220、ECE313）、数学（MATH213、MATH221/231、MATH241、MATH285）、物理（PHYS211）及公共课程等。每个课程页面提供课程简介、难度评价、考核方式和学习建议，并配有学长学姐整理的笔记和推荐资源链接。更重要的是，网站通过详细的文件列表，集中分享课程 PPT、实验指导、作业练习、课堂笔记、历年试题与答案等文件，方便同学按需下载使用。平台倡导知识共享，鼓励学生参与完善内容，帮助后来者更好地应对课程学习。
 site_author: ZJUIntl-share
 site_url: https://icicles.zjuintl-share.top
 repo_name: zjuintl-icicles
